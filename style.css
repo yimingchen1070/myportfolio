@@ -105,3 +105,22 @@ dialog h2 { margin: 25px 0 5px; } dialog p { font-size: 14px; }
   footer > span:nth-child(2) { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* About writing: a generous single column with room between paragraphs. */
+.about-writing { max-width: 800px; padding: 25px 0 90px; border-top: 1px solid var(--line); }
+.about-writing p { margin-bottom: 36px; line-height: 1.9; }
+.about-writing .large-copy { line-height: 1.5; }
+
+/* Two unlabeled project groups: larger work above, smaller studies below. */
+.project-group { padding-bottom: 60px; }
+.project-group + .project-group { border-top: 1px solid var(--line); padding-top: 60px; }
+.project-group .project-grid { margin-bottom: 0; }
+.projects-large { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.projects-small { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+.projects-small .project-visual { min-height: 210px; }
+.projects-small .project-empty { border: 0; padding: 0; }
+@media (max-width: 760px) {
+  .projects-large, .projects-small { grid-template-columns: 1fr; }
+  .project-group { padding-bottom: 40px; }
+  .project-group + .project-group { padding-top: 40px; }
+}

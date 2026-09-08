@@ -15,7 +15,33 @@
     <a class="wordmark" href="index.html">Nicole Chen</a>
     <nav aria-label="Main navigation"><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="art.html">Art</a><a href="contact.html">Contact</a></nav>
   </header>
-  <main id="main"><div class="page-heading"><p class="eyebrow">02 / Projects</p><h1>Work in progress.</h1><p>Experiments in code and the things I'm learning along the way.</p></div><div class="project-grid"><a class="project-card" href="project-portfolio.html"><div class="project-visual" aria-hidden="true"><span>NC.</span><small>PORTFOLIO / 01</small></div><div class="project-label"><h2>Personal portfolio</h2><span>↗</span></div><p>HTML · CSS · JavaScript</p></a><div class="project-empty"><p class="eyebrow">Up next</p><p>More projects coming soon.</p></div></div></main>
+  <main id="main">
+    <div class="page-heading">
+      <p class="eyebrow">02 / Projects</p>
+      <h1>Work in progress.</h1>
+      <p>Experiments in code and the things I'm learning along the way.</p>
+    </div>
+
+    <!-- Bigger projects: copy a project-card link into this group. -->
+    <section class="project-group" aria-label="Larger projects">
+      <div class="project-grid projects-large">
+        <a class="project-card" href="project-portfolio.html">
+          <div class="project-visual" aria-hidden="true">
+            <span>NC.</span><small>PORTFOLIO / 01</small>
+          </div>
+          <div class="project-label"><h2>Personal portfolio</h2><span>↗</span></div>
+          <p>HTML · CSS · JavaScript</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Smaller projects: add project-card links here as you finish them. -->
+    <section class="project-group" aria-label="Smaller projects">
+      <div class="project-grid projects-small">
+        <div class="project-empty"><p>More projects coming soon.</p></div>
+      </div>
+    </section>
+  </main>
   <footer><span>Nicole Chen</span><span>Coding &amp; art</span><a href="mailto:nicolechen8@outlook.com">Get in touch ↗</a></footer>
   <dialog id="lightbox" aria-labelledby="lightbox-title">
     <button class="close" aria-label="Close artwork">Close ×</button>
